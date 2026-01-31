@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{
+    --color-primary-1: #F3E5D8;
+    --color-primary-2: #3E2723;
+    --color-primary-3: #5D4037;
+    --color-primary-4: #8D6E63;
+    --color-primary-5: #C89B3C;
+
+    --color-neutral-0: #FAFAFA;
+}
+*{
+   margin: 0;
+   padding: 0;
+   font-family: "Poppins", sans-serif;
+   box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: var(--color-primary-1);
+}
+
+
+header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 3.125rem;
+    background-color: var(--color-primary-1);
+    z-index: 10;
+}
+
+/* Estilização do menu de navegação */
+.navbar{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+#logo{
+    font-size: 1.5rem;
+    color: var(--color-primary-2);
+    margin-left: 1.875rem;
+}
+.nav-list{
+    display: flex;
+    list-style: none;
+    gap: 3rem;
+}
+.nav-item a{
+    text-decoration: none;
+    color: var(--color-primary-3);
+    font-weight: 600;
+    margin-right: 1.5rem;
+}
+.nav-item.active a{
+    color: var(--color-primary-2);
+    border-bottom: 3px solid var(--color-primary-5);
+}
+/* Estlização do hero */
+
+.hero-title{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: calc(100vh - 5.6875rem);
+    padding: 0 8%;
+    position: relative;
+    overflow: hidden;
+}
+.hero-information{
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.75rem;
+    margin-top: 5%;
+    
+}
+.title{
+    font-size: 2rem;
+    color: var(--color-primary-3);
+    
+}
+.title span{
+    color: var(--color-primary-5);
+}
+.description{
+    font-size: 1.2rem;
+}
+.buttons{
+    display: flex;
+    gap: 1rem;
+}
+.btn-default{
+    align-items: center;
+    background-color: var(--color-primary-2);
+    color: var(--color-neutral-0);
+    padding: 0.5rem 0.875rem;
+    border: none;
+    border-radius: 0.25rem;
+    font-weight: 500;
+}
+.btn-default:hover{
+    background-color: var(--color-primary-3);
+}
+.social-media-buttons{
+    display: flex;
+    gap: 1.25rem;
+    font-size: 1.5rem;
+    margin-left: 1.25rem;
+}
+.banner{
+    position: relative;
+    display: flex;
+    min-height: 700px;
+    width: 70%;
+    overflow: hidden;
+    z-index: 2;
+}
+.banner img{
+   position: absolute;
+    width: 18.75rem;
+    height: auto;
+    transition: transform 0.4 ease;
+}
+.img-top{
+    top: 10%;
+    right: 30%;
+    transform: rotate(-6deg);
+}
+.img-bottom{
+    bottom: 5%;
+    right: 5%;
+    width: 18.75rem;
+    z-index: 3;
+    transform: rotate(4deg);
+}
+
+
+.shape{
+    background-color: var(--color-primary-4);
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    border-radius: 40% 30% 0% 20%;
+    top: 0;
+    right: 0;
+    z-index: 1;
+}
+/*Criação das bolinhas no banner */
+.decor{
+    position: absolute;
+    border-radius: 50%;
+    opacity: 0.4s;
+}
+.dot-1{
+    width: 4.375rem;
+    height: 4.375rem;
+    background-color: var(--color-primary-3);
+    top: 60%;
+    left: 10%;
+}
+.dot-2{
+    width: 3.75rem;
+    height: 3.75rem;
+    background-color: var(--color-primary-1);
+    bottom: 25%;
+    right: 5%;
+}
+.dot-3{
+    width: 6.25rem;
+    height: 6.25rem;
+    background-color: var(--color-primary-5);
+    top: 20%;
+    right: 20%;
+}
