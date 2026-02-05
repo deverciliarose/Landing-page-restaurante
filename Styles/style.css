@@ -6,8 +6,9 @@
     --color-primary-3: #5D4037;
     --color-primary-4: #8D6E63;
     --color-primary-5: #C89B3C;
-
+    --color-primary-6: #D8C3A5;
     --color-neutral-0: #FAFAFA;
+    --color-horario: #ff0000;
 }
 *{
    margin: 0;
@@ -176,4 +177,143 @@ header{
     background-color: var(--color-primary-5);
     top: 20%;
     right: 20%;
+}
+/*Estilizção do sobre*/
+.Sobre{
+    margin-top: 2rem;
+}
+.sobre-title{
+    text-align: center;
+    color: var(--color-primary-3);
+    font-size: 1.5rem;
+}
+.Sobre p{
+    text-align: center;
+}
+/*Diferenciais*/
+.diferenciais{
+    margin-top: 2rem;
+}
+.diferenciais-title{
+    text-align: center;
+    color: var(--color-primary-3);
+    font-size: 1.5rem;
+}
+.diferenciais ul li{
+    text-align: center;
+}
+/*Cardápio*/
+.cardapio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
+    
+}
+.cardapio-title{
+    text-align: center;
+    margin-top: 2rem;
+    color: var(--color-primary-3);
+}
+
+.cardapio-itens{
+    width: 100%;
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 3rem;
+    align-items: start;
+}
+.cardapio article{
+    width: 13.75rem;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    text-align: center;
+    background-color: var(--color-primary-6);
+    border-radius: 12px;
+}
+.cardapio article img{
+    width: 100px;
+    margin-top: 30px;
+    
+}
+.cardapio article p{
+    margin-top: 2px;
+}
+.avaliaçao{
+    display: flex;
+    align-items: center;
+}
+.estrelas{
+    color: var(--color-primary-5);
+    font-size: 1.2rem;
+}
+.price{
+    display: flex;
+    gap: 2rem;
+}
+.price span{
+    font-size: 1.1rem;
+}
+.price i{
+    width: 2rem;
+    background-color: var(--color-primary-5);
+    border-radius: 2px;
+}
+/*Horário de atendimento */
+.horario-title{
+    margin-top: 2rem;
+    color: var(--color-primary-3);
+    text-align: center;
+}
+.horarios p{
+    text-align: center;
+    color: var(--color-primary-2);
+}
+.horarios p span{
+    color: var(--color-horario);
+}
+address{
+    text-align: center;
+    color: var(--color-primary-3);
+}
+/* Depoimentos dos nossos clientes */
+.Depoimentos-title{
+    margin-top: 2rem;
+    color: var(--color-primary-3);
+    text-align: center;
+}
+.depoimento{
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+.chefe{
+    width: 600px;
+    height: 600px;
+}
+.depoimentos-lista{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.depoimentos-lista blockquote{
+    display: flex;
+    background-color: var(--color-primary-6);
+}
+.depoimentos-lista blockquote .cliente{
+    display: flex;
+    flex-direction: column;
+    margin-left: 2rem;
+   
+}
+
+.depoimentos-lista img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+   
 }

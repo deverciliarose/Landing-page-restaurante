@@ -44,7 +44,7 @@
             <div class="hero-information">
             <h2 class="title">O verdadeiro sabor da brasa, direto para sua <span>mesa.</span></h2>
             <p class="description">
-                Carnes selecionadas, pratos artesanaise um ambiente acolhedor para transformar cada refeição em uma experiência inesquecível.
+                Carnes selecionadas, pratos artesanais e um ambiente acolhedor para transformar cada refeição em uma experiência inesquecível.
             </p>
             <div class="buttons">
                 <button class="btn-default" id="openModal">
@@ -81,46 +81,101 @@
             </p>
         </section>
         <section class="diferenciais">
-            <h2 class="diferenciais-title">Por que escolher o Sabor & Brasa</h2>
+            <h2 class="diferenciais-title">Por que escolher o Sabor & Brasa?</h2>
             <ul>
-                <li>Carnes preparadas na brasa no ponto ideal</li>
-                <li>ingredientes frescos e selecionados diariamente</li>
-                <li>Receitas autorais assinadas pelo chef</li>
-                <li>Ambiente moderno, aconchegante e familiar</li>
-                <li>Opções de delivery e retirada no local</li>
+                <li>Carnes preparadas na brasa no ponto ideal;</li>
+                <li>Ingredientes frescos e selecionados diariamente;</li>
+                <li>Receitas autorais assinadas pelo chef;</li>
+                <li>Ambiente moderno, aconchegante e familiar;</li>
+                <li>Opções de delivery e retirada no local.</li>
             </ul>
         </section>
         <section class="cardapio">
             <h2 class="cardapio-title">Pratos que conquistam no primeiro sabor</h2>
+           <div class="cardapio-itens">
             <article>
+                <img src="img/picanha-na-brasa.png" alt="picanha">
                 <h3>Picanha na Brasa</h3>
-                <p>Suculenta, servida com acompanhamento tradicional</p>
-                <img src="img/picanha.png" alt="picanha">
+                <p>Suculenta, servida com acompanhamento tradicional.</p>
+
+                <figure class="avaliaçao">
+                    <div class="estrelas">
+                        <span>&starf;&starf;&starf;&starf;&starf;</span>
+                    </div>
+                    <figcaption class="quantidade-avaliaçoes">
+                        +500
+                    </figcaption>
+                </figure>
+
+                <div class="price">
+                    <Span><strong>R$ 79,99</strong></Span>
+                    <i class="bi bi-basket2-fill"></i>
+                </div>
             </article>
             <article>
-                <h3>Burguer Artesanal</h3>
-                <p>Blend exclusivo, pão artesanal e molhos da casa.</p>
                 <img src="img/burguer.png" alt="burguer">
+                <h3>Burguer Artesanal</h3>
+                <p>Pão artesanal e molhos da casa.</p>
+
+                <figure class="avaliaçao">
+                    <div class="estrelas">
+                        <span>&starf;&starf;&starf;&starf;&starf;</span>
+                    </div>
+                    <figcaption class="quantidade-avaliaçoes">
+                        +500
+                    </figcaption>
+                </figure>
+
+                <div class="price">
+                    <span><strong>R$ 20,00</strong></span>
+                    <i class="bi bi-basket2-fill"></i>
+                </div>
             </article>
             <article>
+                <img src="img/massa-artesanal.png" alt="massa">
                 <h3>Massa Artesanal</h3>
                 <p>Preparada diariamente com ingredientes frescos.</p>
-                <img src="img/massa-artesanal.png" alt="massa">
+
+                <figure class="avaliaçao">
+                    <div class="estrelas">
+                        <span>&starf;&starf;&starf;&starf;&starf;</span>
+                    </div>
+                    <figcaption class="quantidade-avaliaçoes">
+                        +500
+                    </figcaption>
+                </figure>
+
+                <div class="price">
+                    <span><strong>R$ 39,99</strong></span>
+                    <i class="bi bi-basket2-fill"></i>
+                </div>
             </article>
             <article>
+                <img src="img/opçao-vegetariana.png" alt="vegetariana">
                 <h3>Opções vegetarianas</h3>
-                <p>Sabor, equilibrio e criatividade em cada prato.</p>
-                <img src="img/vegetariana.png" alt="vegetariana">
+                <p>Sabor, equilibrio e criatividade.</p>
+
+                <figure class="avaliaçao">
+                    <div class="estrelas">
+                        <span>&starf;&starf;&starf;&starf;&starf;</span>
+                    </div>
+                    <figcaption class="quantidade-avaliaçoes">
+                        +500
+                    </figcaption>
+                </figure>
+              
+                <div class="price">
+                    <span><strong>R$ 36,90</strong></span>
+                    <i class="bi bi-basket2-fill"></i>
+                </div>
             </article>
-            <button class="btn-cardapio">
-                Veja o cardapio completo
-            </button>
+           </div>
         </section>
         <section class="horarios">
            <h2 class="horario-title">Estamos prontos para receber você</h2>
            <p><strong>Horário de Funcionamento</strong></p>
-           <p>Segunda a Sexta: 11h às 23h</p>
-           <p>Sábado e Domingo: 11h às 00h</p>
+           <p>Segunda a Sexta: <span>11h às 23h</span></p>
+           <p>Sábado e Domingo: <span>11h às 00h</span></p>
 
            <address>
             Rua São José, 123 - Centro - Campestre do Maranhão
@@ -129,17 +184,33 @@
         <section class="Depoimentos">
             <h2 class="Depoimentos-title">O que nossos clientes dizem</h2>
 
-            <img src="img/Chefe.png" alt="chefe">
+           <div class="depoimento">
+            <img src="img/Chefe.png" class="chefe" alt="chefe">
 
+           <div class="depoimentos-lista">
             <blockquote>
-               <p>"Ambiente incrível e comida sensacional. A melhor carne da cidade!" </p>
+                <img src="img/perfil1.jpeg" class="perfil1" alt="">
+                <div class="cliente">
+                    <h3>Ana</h3>
+                <p>"Ambiente incrível e comida sensacional. A melhor carne da cidade!" </p>
+                </div>
             </blockquote>
             <blockquote>
-                <p>"Atendimento excelente e pratos muito bem servidos. Recomendo demais!"</p>
+                <img src="img/perfil2.jpeg" class="perfil2" alt="">
+                <div class="cliente">
+                    <h3>Marcos</h3>
+                    <p>"Atendimento excelente e pratos muito bem servidos. Recomendo demais!"</p>
+                </div>
             </blockquote>
             <blockquote>
-                <p>"Experiência completa, do início ao fim."</p>
+                <img src="img/perfil3.jpeg" class="perfil3" alt="">
+                <div class="cliente">
+                    <h3>Laura</h3>
+                    <p>"Experiência completa, do início ao fim."</p>
+                </div>
             </blockquote>
+           </div>
+           </div>
         </section>
         <section class="cta">
             <h2 class="cta-title">Pronto para viver essa experiência?</h2>
