@@ -21,6 +21,7 @@ html{
 }
 body{
     background-color: var(--color-primary-1);
+    overflow-x: hidden;
 }
 
 
@@ -45,6 +46,13 @@ header{
     font-size: 1.5rem;
     color: var(--color-primary-2);
     margin-left: 1.875rem;
+}
+.menu-toggle{
+    display: none;
+    font-size: 2rem;
+    background: none;
+    border: none;
+    cursor: pointer;
 }
 .nav-list{
     display: flex;
@@ -103,6 +111,7 @@ header{
     border: none;
     border-radius: 0.25rem;
     font-weight: 500;
+    transition: background-color 0.2s ease;
 }
 .btn-default:hover{
     background-color: var(--color-primary-3);
@@ -112,6 +121,9 @@ header{
     gap: 1.25rem;
     font-size: 1.5rem;
     margin-left: 1.25rem;
+}
+.social-media-buttons a{
+    color: var(--color-primary-2);
 }
 .banner{
     position: relative;
@@ -142,14 +154,15 @@ header{
 
 
 .shape{
-    background-color: var(--color-primary-4);
     width: 50%;
     height: 100%;
     position: absolute;
-    border-radius: 40% 30% 0% 20%;
     top: 0;
     right: 0;
     z-index: 1;
+}
+.shape img{
+    border-radius: 40% 30% 0% 20%;
 }
 /*Criação das bolinhas no banner */
 .decor{
@@ -179,7 +192,7 @@ header{
     right: 20%;
 }
 /*Estilizção do sobre*/
-.Sobre{
+#Sobre{
     margin-top: 2rem;
 }
 .sobre-title{
@@ -187,7 +200,7 @@ header{
     color: var(--color-primary-3);
     font-size: 1.5rem;
 }
-.Sobre p{
+#Sobre p{
     text-align: center;
 }
 /*Diferenciais*/
@@ -203,7 +216,7 @@ header{
     text-align: center;
 }
 /*Cardápio*/
-.cardapio{
+#cardapio{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -224,7 +237,7 @@ header{
     gap: 3rem;
     align-items: start;
 }
-.cardapio article{
+#cardapio article{
     width: 13.75rem;
     height: 350px;
     display: flex;
@@ -235,12 +248,12 @@ header{
     background-color: var(--color-primary-6);
     border-radius: 12px;
 }
-.cardapio article img{
+#cardapio article img{
     width: 100px;
     margin-top: 30px;
     
 }
-.cardapio article p{
+#cardapio article p{
     margin-top: 2px;
 }
 .avaliaçao{
@@ -265,15 +278,15 @@ header{
 }
 /*Horário de atendimento */
 .horario-title{
-    margin-top: 2rem;
+    margin-top: 3rem;
     color: var(--color-primary-3);
     text-align: center;
 }
-.horarios p{
+#horarios p{
     text-align: center;
     color: var(--color-primary-2);
 }
-.horarios p span{
+#horarios p span{
     color: var(--color-horario);
 }
 address{
@@ -282,17 +295,19 @@ address{
 }
 /* Depoimentos dos nossos clientes */
 .Depoimentos-title{
-    margin-top: 2rem;
+    margin-top: 3rem;
     color: var(--color-primary-3);
     text-align: center;
 }
 .depoimento{
     display: flex;
     align-items: center;
-    gap: 3rem;
+    margin-top: 0.5rem;
+    margin-bottom: 6rem;
+    gap: 2rem;
 }
 .chefe{
-    width: 600px;
+    max-width: 43.75rem;
     height: 600px;
 }
 .depoimentos-lista{
@@ -303,17 +318,395 @@ address{
 .depoimentos-lista blockquote{
     display: flex;
     background-color: var(--color-primary-6);
+    height: 6.25rem;
+    margin-right: 3.75rem;
+    border-radius: 5px;
+    
 }
 .depoimentos-lista blockquote .cliente{
     display: flex;
     flex-direction: column;
     margin-left: 2rem;
+    margin-top: 0.625rem;
    
 }
-
 .depoimentos-lista img{
-    width: 60px;
-    height: 60px;
+    width: 3.75rem;
+    height: 3.75rem;
     border-radius: 50%;
+    margin-top: 1.25rem;
+    margin-left: 0.625rem;
    
+}
+/*cta*/
+.cta-title{
+    text-align: center;
+    color: var(--color-primary-3);
+}
+.cta p{
+    text-align: center;
+    margin-top: 10px;
+    color: var(--color-primary-3);
+}
+.cta-buttons{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 60px;
+}
+.cta-btn{
+    align-items: center;
+    background-color: var(--color-primary-2);
+    color: var(--color-neutral-0);
+    padding: 0.5rem 0.875rem;
+    border: none;
+    border-radius: 0.25rem;
+    font-weight: 500;
+    transition: background-color 0.2s ease;
+}
+.cta-btn:hover{
+    background-color: var(--color-primary-3);
+}
+/*Footer*/
+#contato{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-primary-2);
+    color: var(--color-neutral-0);
+    padding: 20px 20px 20px;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+}
+.redes-sociais{
+    display: flex;
+    gap: 2rem;
+}
+#zap-button{
+    font-size: 1.3rem;
+    color: black;
+    background-color: var(--color-neutral-0);
+    padding: 5px 10px;
+    border-radius: 50%;
+}
+#insta-button{
+    font-size: 1.3rem;
+    color: black;
+    background-color: var(--color-neutral-0);
+    padding: 5px 10px;
+    border-radius: 50%;
+}
+#linkedin-button{
+    font-size: 1.3rem;
+    color: black;
+    background-color: var(--color-neutral-0);
+    padding: 5px 10px;
+    border-radius: 50%;
+}
+#contato i{
+    font-size: 1.1rem;
+    margin-top: 15px;
+}
+#contato p{
+    font-size: 1rem;
+}
+/*Modal cardápio */
+.cardapioModal{
+    width: 500px;
+    height: 800px;
+    max-width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1.25rem;
+    padding: 1.5rem 2rem 2rem;
+    border-radius: 0.75rem;
+    background-color: var(--color-primary-1);
+    border: none;
+}
+.cardapioModal header{
+    width: 450px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    margin-top: 1.25rem;
+}
+.titulo-cardapio{
+    margin: 0;
+}
+.cardapioModal .close{
+    background: none;
+    border: none;
+    margin-left: 300px;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+.cardapio-item{
+    margin-top: 1.25rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+.cardapio-item article{
+    background-color: var(--color-neutral-0);
+    border-radius: 12px;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 0.9375;
+}
+.cardapio-item img{
+    width: 120px;
+    height: auto;
+    object-fit: contain;
+}
+.price{
+    margin-top: 0.625rem;
+}
+/*Modal Reserva*/
+.modalReserva{
+    width: 400px;
+    height: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1.25rem;
+    border: none;
+    border-radius: 12px;
+    background-color: var(--color-primary-1);
+}
+.modalReserva header{
+    display: flex;
+    width: 390px;
+    margin-top: 1.5625rem;
+
+}
+.modalReserva .reserva-title{
+    margin-left: 20px;
+}
+.modalReserva .close{
+    margin-left: 250px;
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+.mapa{
+    display: flex;
+    justify-content: center;
+}
+.mapa img{
+   width: 300px;
+}
+.modalReserva form{
+    display: flex;
+    flex-direction: column;
+}
+.modalReserva form label{
+    margin-left: 1.5625rem;
+}
+.modalReserva form input{
+    width: 340px;
+    margin-left: 1.5625rem;
+    outline: none;
+}
+.modalReserva form #reserva{
+    margin-top: 0.9375rem;
+    background-color: var(--color-primary-2);
+    color: var(--color-neutral-0);
+    border: none;
+    width: 200px;
+    height: 1.875rem;
+    border-radius: 0.3125rem;
+    margin-left: auto;
+    margin-right: auto;
+    transition: background-color 0.2s ease;
+}
+.modalReserva form #reserva:hover{
+    background-color: var(--color-primary-3);
+}
+
+@media(max-width:576px){
+    
+    .menu-toggle{
+        display: block;
+        color: var(--color-neutral-0);
+        z-index: 2000;
+    }
+    .nav-list{
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        background-color: var(--color-primary-4);
+        margin-top: 80px;
+        left: 0;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+        padding: 1rem 0;
+        gap: 1.5rem;
+        z-index: 1000;
+    }
+    .nav-item{
+        width: 100%;
+        text-align: center;
+    }
+    .nav-item a{
+        color: var(--color-neutral-0);
+        display: block;
+        width: auto;
+    }
+    .nav-list.active{
+        display: flex;
+    }
+    /*Title*/
+    .hero-title{
+        flex-direction: column;
+        text-align: center;
+        height: auto;
+    }
+
+    .shape{
+        position: relative; 
+        width: 100%;
+        height: auto;
+        border-radius: 0; 
+    }
+
+    .shape img{
+        width: 100%;
+        height: auto;
+        margin-top: 25px;
+    }
+
+    .hero-information{
+        width: 100%;
+        align-items: center;
+        margin-top: 2rem;
+    }
+    /*Cardapio*/
+    .cardapio-itens{
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+
+    #cardapio article{
+        width: 100%;
+        max-width: 300px;
+    }
+    /*Depoimento*/
+    .depoimento{
+        display: flex;
+        flex-direction: column;
+        margin-top: 0.5rem;
+        margin-bottom: 6rem;
+        
+    }
+    .chefe{
+        max-width: 43.75rem;
+        height: 300px;
+    }
+    .depoimentos-lista{
+        width: 100%;
+    }
+    .depoimentos-lista blockquote{
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        
+    }
+    .depoimentos-lista blockquote .cliente{
+        display: flex;
+        flex-direction: column;
+        margin-left: 2rem;
+        margin-top: 0.3125rem;
+        font-size: 15px;
+       
+    }
+    .depoimentos-lista img{
+        width: 3.75rem;
+        height: 3.75rem;
+        border-radius: 50%;
+        margin-top: 1.25rem;
+        margin-left: 0.625rem;
+       
+    }
+    /*modal cardápio*/
+    cardapioModal{
+       width: 90%;
+       height: auto;
+       padding: 1rem;
+    }
+    .cardapioModal header{
+       width: 80%;
+       justify-content: space-between;
+    }
+    .titulo-cardapio{
+        margin: 0;
+    }
+    .cardapioModal .close{
+        margin-left: 0;
+    }
+    .cardapio-item{
+        margin-top: 1.25rem;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    .cardapio-item article{
+        background-color: var(--color-neutral-0);
+        border-radius: 12px;
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-top: 0.9375;
+    }
+    .cardapio-item img{
+        width: 120px;
+        height: auto;
+        object-fit: contain;
+        margin-bottom: 0;
+    }
+    .price{
+        margin-top: 0.625rem;
+    }
+    /*Modal Reserva*/
+    .modalReserva{
+        min-height: auto;
+    }
+    .modalReserva header{
+        width: 80%;
+        justify-content: space-between;
+    }
+
+    .mapa{
+        margin-bottom: 0;
+    }
+    .mapa img{
+        margin-bottom: -10px;
+    }
+    
+    .modalReserva form{
+        margin-top: -50px;
+    }
+    .modalReserva form input{
+        width: 85%;
+        margin-left: 1.5625rem;
+        outline: none;
+    }
+    .modalReserva form #reserva{
+        margin-bottom: 12px;
+    }
+    .modalReserva form #reserva:hover{
+        background-color: var(--color-primary-3);
+    }
+
+
+
+    
 }

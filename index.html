@@ -13,21 +13,26 @@
         <nav class="navbar">
             <i  id="logo">SABOR&BRASA</i>
 
+            <button class="menu-toggle" id="menuToggle">
+                <i class="bi bi-list" id="menuIcon"></i>
+            </button>
+            
+
             <ul class="nav-list">
                 <li class="nav-item active">
                     <a href="#Sobre">Sobre</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#menu">Cardápio</a>
+                    <a href="#cardapio">Cardápio</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#schedules">Horários</a>
+                    <a href="#horarios">Horários</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#testimonials">Avaliações</a>
+                    <a href="#Depoimentos">Avaliações</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#contacts">Contatos</a>
+                    <a href="#contato">Contatos</a>
                 </li>
             </ul>
 
@@ -37,9 +42,10 @@
     <main>
         <section class="hero-title">
             <div class="shape">
-                <div class="decor dot-1"></div>
+                <img src="img/Sabor&Brasa.jpeg" alt="">
+               <!-- <div class="decor dot-1"></div>
                 <div class="decor dot-2"></div>
-                <div class="decor dot-3"></div>
+                <div class="decor dot-3"></div>-->
             </div>
             <div class="hero-information">
             <h2 class="title">O verdadeiro sabor da brasa, direto para sua <span>mesa.</span></h2>
@@ -47,26 +53,33 @@
                 Carnes selecionadas, pratos artesanais e um ambiente acolhedor para transformar cada refeição em uma experiência inesquecível.
             </p>
             <div class="buttons">
-                <button class="btn-default" id="openModal">
+                <button class="btn-default openModal" >
                     Ver Cardápio
                 </button>
-                <button class="btn-default" id="openReserva">
+                <button class="btn-default openReserva" >
                     Fazer Reserva
                 </button>
             </div>
             <div class="social-media-buttons">
-                <i class="bi bi-whatsapp"></i>
-                <i class="bi bi-instagram"></i>
-                <i class="bi bi-linkedin"></i>
+                <a href="https://wa.me/5599984753745" target="_blank">
+                    <i class="bi bi-whatsapp"></i>
+                </a>
+                <a href="https://instagram.com/zoomtechnology1" target="_blank">
+                    <i class="bi bi-instagram"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/ercília-rose-santos-5bb773263" target="_blank">
+                    <i class="bi bi-linkedin"></i>
+                </a>
+                
             </div>
         </div>
-            <div class="banner">
+           <!-- <div class="banner">
             <img src="img/header-S&B.png" class="img-top" alt="">
             <img src="img/banner2.png" class="img-bottom" alt="">
-            </div>
+            </div> -->
         </section>
 
-        <section class="Sobre">
+        <section id="Sobre">
             <h2 class="sobre-title">Mais do que um restaurante, uma experiência.</h2>
             <p>
                 O Sabor & Brasa nasceu da paixão pela boa comida e pelo fogo que transforma ingredientes
@@ -90,7 +103,7 @@
                 <li>Opções de delivery e retirada no local.</li>
             </ul>
         </section>
-        <section class="cardapio">
+        <section id="cardapio">
             <h2 class="cardapio-title">Pratos que conquistam no primeiro sabor</h2>
            <div class="cardapio-itens">
             <article>
@@ -109,7 +122,7 @@
 
                 <div class="price">
                     <Span><strong>R$ 79,99</strong></Span>
-                    <i class="bi bi-basket2-fill"></i>
+                    <i class="bi bi-basket2-fill sacola" ></i>
                 </div>
             </article>
             <article>
@@ -128,8 +141,7 @@
 
                 <div class="price">
                     <span><strong>R$ 20,00</strong></span>
-                    <i class="bi bi-basket2-fill"></i>
-                </div>
+                    <i class="bi bi-basket2-fill sacola" ></i>
             </article>
             <article>
                 <img src="img/massa-artesanal.png" alt="massa">
@@ -147,7 +159,7 @@
 
                 <div class="price">
                     <span><strong>R$ 39,99</strong></span>
-                    <i class="bi bi-basket2-fill"></i>
+                    <i class="bi bi-basket2-fill sacola" ></i>
                 </div>
             </article>
             <article>
@@ -166,12 +178,12 @@
               
                 <div class="price">
                     <span><strong>R$ 36,90</strong></span>
-                    <i class="bi bi-basket2-fill"></i>
+                    <i class="bi bi-basket2-fill sacola" ></i>
                 </div>
             </article>
            </div>
         </section>
-        <section class="horarios">
+        <section id="horarios">
            <h2 class="horario-title">Estamos prontos para receber você</h2>
            <p><strong>Horário de Funcionamento</strong></p>
            <p>Segunda a Sexta: <span>11h às 23h</span></p>
@@ -181,11 +193,11 @@
             Rua São José, 123 - Centro - Campestre do Maranhão
            </address>
         </section>
-        <section class="Depoimentos">
+        <section id="Depoimentos">
             <h2 class="Depoimentos-title">O que nossos clientes dizem</h2>
 
            <div class="depoimento">
-            <img src="img/Chefe.png" class="chefe" alt="chefe">
+            <img src="img/chefe-de-cozinha.png" class="chefe" alt="">
 
            <div class="depoimentos-lista">
             <blockquote>
@@ -216,29 +228,34 @@
             <h2 class="cta-title">Pronto para viver essa experiência?</h2>
             <p>Faça sua reserva agora ou confira nosso cardápio completo.</p>
             <div class="cta-buttons">
-                <button class="cta-btn" id="openReserva">
+                <button class="cta-btn openReserva" >
                     Fazer reserva
                 </button>
-                <button class="cta-btn" id="openModal">
+                <button class="cta-btn openModal" >
                     Ver cardápio
                 </button>
             </div>
         </section>
 
     </main>
-    <footer class="contato">
-        <p><strong>Sabor & Brasa</strong></p>
-        <p>Rua São José, 123 - Centro </p>
-        <p>(99) 98475-3745</p>
-
+    <footer id="contato">
         <div class="redes-sociais">
-            <i class="bi bi-whatsapp"></i>
-            <i class="bi bi-instagram"></i>
-            <i class="bi bi-linkedin"></i> 
+            <a href="https://wa.me/5599984753745" target="_blank">
+                <i class="bi bi-whatsapp" id="zap-button"></i>
+            </a>
+            <a href="https://instagram.com/zoomtechnology1" target="_blank">
+                <i class="bi bi-instagram" id="insta-button"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/ercília-rose-santos-5bb773263" target="_blank">
+                <i class="bi bi-linkedin" id="linkedin-button"></i>
+            </a>    
         </div>
 
+        <i>SABOR&BRASA</i>
+        <p>Rua São José, 123 - Centro </p>
         <p>&copy; 2026 Ercília Rose. Todos os direitos reservados.</p>
     </footer>
+   
     <!--Modal Cardápio-->
     <dialog class="cardapioModal">
         <header>
@@ -248,10 +265,10 @@
         <div class="cardapio-item">
             <article>
                 <h3>Picanha na Brasa</h3>
-                <img src="img/picanha.png" alt="picanha">
+                <img src="img/picanha-na-brasa.png" alt="">
                 <p>Suculenta, servida com acompanhamento tradicional</p>
                 <div class="price">
-                    <i class="bi bi-cart-dash-fill"></i>
+                    <i class="bi bi-cart-dash-fill sacola"></i>
                     <p><strong>R$79,90</strong></p>
                 </div>
             </article>
@@ -260,7 +277,7 @@
                 <img src="img/burguer.png" alt="burguer">
                 <p>Blend exclusivo, pão artesanal e molhos da casa.</p>
                 <div class="price">
-                    <i class="bi bi-cart-dash-fill"></i>
+                    <i class="bi bi-cart-dash-fill sacola"></i>
                     <p><strong>R$20,00</strong></p>
                 </div>
             </article>
@@ -269,16 +286,16 @@
                 <img src="img/massa-artesanal.png" alt="massa">
                 <p>Preparada diariamente com ingredientes frescos.</p>
                 <div class="price">
-                    <i class="bi bi-cart-dash-fill"></i>
+                    <i class="bi bi-cart-dash-fill sacola"></i>
                     <p><strong>R$39,99</strong></p>
                 </div>
             </article>
             <article>
                 <h3>Opções vegetarianas</h3>
-                <img src="img/vegetariana.png" alt="vegetariana">
+                <img src="img/opçao-vegetariana.png" alt="">
                 <p>Sabor, equilibrio e criatividade em cada prato.</p>
                 <div class="price">
-                    <i class="bi bi-cart-dash-fill"></i>
+                    <i class="bi bi-cart-dash-fill sacola"></i>
                     <p><strong>R$36,90</strong></p>
                 </div>
                 
@@ -290,8 +307,10 @@
         <header>
             <h2 class="reserva-title">Reserva</h2>
             <button class="close">&times;</button>
-            <img src="img/Mesas.png" alt="">
         </header>
+        <div class="mapa">
+            <img src="img/Mesas.png" alt="">
+        </div>
         <form>
             <label for="nome">Nome:</label>
             <input type="text"  id="nome" required>
@@ -303,12 +322,12 @@
             <input type="time"  id="horario" required>
 
             <label for="pessoas">Pessoas</label>
-            <input type="number" id="pessoas" required>
+            <input type="text" id="pessoas" required>
 
-            <label for="contato">Contato</label>
-            <input type="number" id="contato" required>
+            <label for="telefone">Contato</label>
+            <input type="tel" id="telefone"  required>
 
-            <button>Confirmar Reserva</button>
+            <button id="reserva">Confirmar Reserva</button>
         </form>
     </dialog>
 
