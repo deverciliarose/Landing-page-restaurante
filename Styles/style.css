@@ -659,11 +659,11 @@ address{
         margin-bottom: 0;
     }
     .mapa img{
-        margin-bottom: -10px;
+        margin-bottom: 10px;
     }
     
     .modalReserva form{
-        margin-top: -50px;
+        margin-top: -5px;
     }
     .modalReserva form input{
         width: 85%;
