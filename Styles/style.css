@@ -151,8 +151,6 @@ header{
     z-index: 3;
     transform: rotate(4deg);
 }
-
-
 .shape{
     width: 50%;
     height: 100%;
@@ -163,33 +161,6 @@ header{
 }
 .shape img{
     border-radius: 40% 30% 0% 20%;
-}
-/*Criação das bolinhas no banner */
-.decor{
-    position: absolute;
-    border-radius: 50%;
-    opacity: 0.4s;
-}
-.dot-1{
-    width: 4.375rem;
-    height: 4.375rem;
-    background-color: var(--color-primary-3);
-    top: 60%;
-    left: 10%;
-}
-.dot-2{
-    width: 3.75rem;
-    height: 3.75rem;
-    background-color: var(--color-primary-1);
-    bottom: 25%;
-    right: 5%;
-}
-.dot-3{
-    width: 6.25rem;
-    height: 6.25rem;
-    background-color: var(--color-primary-5);
-    top: 20%;
-    right: 20%;
 }
 /*Estilizção do sobre*/
 #Sobre{
@@ -228,7 +199,6 @@ header{
     margin-top: 2rem;
     color: var(--color-primary-3);
 }
-
 .cardapio-itens{
     width: 100%;
     max-width: 1200px;
@@ -424,11 +394,12 @@ address{
     border-radius: 0.75rem;
     background-color: var(--color-primary-1);
     border: none;
+    overflow-x: hidden;
 }
 .cardapioModal header{
     width: 450px;
     display: flex;
-    align-items: center;
+    justify-content: space-between;
     margin-bottom: 1.5rem;
     margin-top: 1.25rem;
 }
@@ -528,7 +499,7 @@ address{
     background-color: var(--color-primary-3);
 }
 
-@media(max-width:576px){
+@media(max-width:768px){
     
     .menu-toggle{
         display: block;
@@ -560,12 +531,9 @@ address{
         display: block;
         width: auto;
     }
-    .nav-item.active{
+    .nav-list.active{
         display: flex;
     }
-    
-    
-    
     /*Title*/
     .hero-title{
         flex-direction: column;
@@ -612,6 +580,8 @@ address{
     .chefe{
         max-width: 43.75rem;
         height: 300px;
+        margin-left: auto;
+        margin-right: auto;
     }
     .depoimentos-lista{
         width: 100%;
@@ -640,7 +610,7 @@ address{
     }
     /*modal cardápio*/
     .cardapioModal header{
-       width: 80%;
+        max-width: 85%;
        justify-content: space-between;
     }
     .titulo-cardapio{
@@ -679,7 +649,7 @@ address{
         min-height: auto;
     }
     .modalReserva header{
-        width: 80%;
+        max-width: 85%;
         justify-content: space-between;
     }
     .modalReserva .close{
