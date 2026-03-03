@@ -38,14 +38,15 @@ menuLinks.forEach(Link =>{
     })
 });
 //Classe active
-const navLink = document.querySelectorAll(".nav-item");
+ const navItems = document.querySelectorAll('.nav-item');
 
-navLink.forEach(navLink => {
-    navLink.addEventListener('click', () =>{
-        document.querySelector('.active').classList.remove('active');
-        navLink.classList.add('active')
+ navItems.forEach(item => {
+    item.addEventListener('click', () =>{
+        navItems.forEach(el => el.classList.remove('active'))
+        item.classList.add('active')
     })
-});
+ })
+
 //Disparo de botões
 const botoes = document.querySelectorAll('.sacola');
 
