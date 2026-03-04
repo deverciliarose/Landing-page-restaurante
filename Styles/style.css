@@ -9,6 +9,7 @@
     --color-primary-6: #D8C3A5;
     --color-neutral-0: #FAFAFA;
     --color-horario: #ff0000;
+      color-scheme: light;
 }
 *{
    margin: 0;
