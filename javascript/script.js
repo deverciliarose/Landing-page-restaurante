@@ -77,3 +77,5 @@ menuToggle.addEventListener('click', ()=>{
         menuIcon.classList.add('bi-list');
     }
 })
+//Ajustar contraste
+document.documentElement.style.setProperty('color-scheme', 'light');

@@ -25,7 +25,9 @@
 }
 html{
     scroll-behavior: smooth;
-    background-color: var(--color-primary-1) !important;
+    background-color: var(--color-primary-1);
+    filter: none !important;
+    forced-color-adjust: none !important;
 }
 body{
     background-color: var(--color-primary-1) !important; 
