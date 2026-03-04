@@ -12,6 +12,11 @@
     --color-horario: #ff0000;
       
 }
+@media (prefers-color-scheme: dark) {
+    :root {
+        color-scheme: light;
+    }
+}
 *{
    margin: 0;
    padding: 0;
@@ -20,19 +25,12 @@
 }
 html{
     scroll-behavior: smooth;
+    background-color: var(--color-primary-1) !important;
 }
 body{
-    background-color: var(--color-primary-1);
-    overflow-x: hidden;
-}
-html, body {
-    background-color: var(--color-primary-1) !important;
+    background-color: var(--color-primary-1) !important; 
     color: var(--color-primary-3) !important;
-}
-@media (prefers-color-scheme: dark) {
-    :root {
-        color-scheme: light;
-    }
+    overflow-x: hidden;
 }
 header{
     position: fixed;
