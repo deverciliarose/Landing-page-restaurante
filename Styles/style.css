@@ -13,28 +13,17 @@
     --color-horario: #ff0000;
       
 }
-@media(prefers-color-scheme:dark){
-    html{
-        background-color: var(--color-primary-1);
-    }
-    body{
-        background-color: var(--color-primary-1);
-        color: var(--color-primary-3);
-    }
-    header,section{
-        background-color: var(--color-primary-1);
-    }
-}
-
 *{
    margin: 0;
    padding: 0;
    font-family: "Poppins", sans-serif;
    box-sizing: border-box;
+   forced-color-adjust: none;
 }
 html{
     scroll-behavior: smooth;
-    background-color: var(--color-primary-1);
+    color-scheme: light;
+    background-color: var(--color-primary-1) !important;
 }
 body{
     background-color: var(--color-primary-1); 
