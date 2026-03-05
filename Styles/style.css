@@ -2,6 +2,7 @@
 
 :root{
     color-scheme: light;
+
     --color-primary-1: #F3E5D8;
     --color-primary-2: #3E2723;
     --color-primary-3: #5D4037;
@@ -12,11 +13,19 @@
     --color-horario: #ff0000;
       
 }
-@media (prefers-color-scheme: dark) {
-    :root {
-        color-scheme: light !important;
+@media(prefers-color-scheme:dark){
+    html{
+        background-color: var(--color-primary-1);
+    }
+    body{
+        background-color: var(--color-primary-1);
+        color: var(--color-primary-3);
+    }
+    header,section{
+        background-color: var(--color-primary-1);
     }
 }
+
 *{
    margin: 0;
    padding: 0;
@@ -26,12 +35,10 @@
 html{
     scroll-behavior: smooth;
     background-color: var(--color-primary-1);
-    filter: none !important;
-    forced-color-adjust: none !important;
 }
 body{
-    background-color: var(--color-primary-1) !important; 
-    color: var(--color-primary-3) !important;
+    background-color: var(--color-primary-1); 
+    color: var(--color-primary-3);
     overflow-x: hidden;
 }
 header{
