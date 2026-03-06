@@ -77,5 +77,14 @@ menuToggle.addEventListener('click', ()=>{
         menuIcon.classList.add('bi-list');
     }
 })
-//Ajustar contraste
-document.documentElement.style.setProperty('color-scheme', 'light');
+//Animação de rolagem
+const elements = document.querySelectorAll('.reveal');
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry =>{
+        if(entry.isIntersecting){
+            entry.target.classList.add('active')
+        }
+    });
+});
+elements.forEach(el => observer.observe(el));
