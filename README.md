@@ -2,7 +2,7 @@
 Uma landing page moderna desenvolvida para apresentar um restaurante fictício especializado em comida na brasa.
 O projeto foi criado com foco em desenvolvimento frontend.
 ### 📸 Demonstrativo do projeto:
-![Preview do Projeto](./assets/sabor-brasa.png)
+![Preview do Projeto](./assets/demonstração.png)
 ### 🔗 Link do Projeto
 Você pode visualizar o projeto online clicando no link abaixo:
 [** Acesse o Sabor & Brasa aqui **](https://landing-page-restaurante-alpha.vercel.app)
